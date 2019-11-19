@@ -3,9 +3,11 @@ pipeline{
      stages{
         stage("git check out"){
              steps{
-             
-              git credentialsId: 'd53c39ba-03c6-48e9-83d1-d332677b2792', url: 'https://github.com/subbareddyreddam/myweb1' 
+                git credentialsId: 'd53c39ba-03c6-48e9-83d1-d332677b2792', url: 'https://github.com/subbareddyreddam/myweb1' 
             }
         }
-     }    
+        stage("MAVEN BUILD"){
+             steps{
+             sh "mvn clean package"
+     }  
 }
