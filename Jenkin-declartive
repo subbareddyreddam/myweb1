@@ -4,7 +4,7 @@ pipeline{
         stage("git check out"){
              steps{
              
-                "subbu"
+              git credentialsId: 'd53c39ba-03c6-48e9-83d1-d332677b2792', url: 'https://github.com/subbareddyreddam/myweb1' 
             }
         }
      }    
