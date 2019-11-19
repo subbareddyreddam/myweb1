@@ -2,8 +2,9 @@ pipeline{
     agent any
      stages{
         stage("git check out"){
-            steps{
-                
+             steps{
+             
+                "subbu"
             }
         }
      }    
